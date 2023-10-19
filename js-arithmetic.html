@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arithmetic</title>
+</head>
+<body>
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+    <!-- tambah -->
+    <h4>Addtion (+)</h4>
+    <h2 id="tambah"></h2>
+
+    <!-- pengurangan -->
+    <h4>Substraction (-)</h4>
+    <h2 id="kurang"></h2>
+
+    <!-- perkalian -->
+    <h4>multiplication (-)</h4>
+    <h2 id="kali"></h2>
+
+    <!-- pengurangan -->
+    <h4>Eksponentation (**)</h4>
+    <h2 id="pemangkatan"></h2>
+
+    <!-- pembagian -->
+    <h4>Division (/)</h4>
+    <h2 id="pembagian"></h2>
+
+    <!-- modulus -->
+    <h4>Modulus (%)</h4>
+    <h2 id="modulus"></h2>
+
+    <!-- kenaikan -->
+    <h4>Increment (++)</h4>
+    <h2 id="kenaikan++"></h2>
+
+    <!-- penurunan -->
+    <h4>Decrement (--)</h4>
+    <h2 id="penurunan--"></h2>
+
+
+    <script>
+        // templet angka
+        let a = 10;
+        let b = 25;
+
+        // templet hitungan
+        let addition = a + b;
+        let substraction = a - b;
+        let multiplication = a * b;
+        let exponentation = a ** b;
+        let division = a / b;
+        let modulus = a % b;
+        let increment = a ++;
+        let decrement = a --;
+
+        // templet penampilan hasil
+        document.getElementById("tambah").innerHTML= addition;
+        document.getElementById("kurang").innerHTML= substraction;
+        document.getElementById("kali").innerHTML= multiplication;
+        document.getElementById("pemangkatan").innerHTML= exponentation;
+        document.getElementById("pembagian").innerHTML= division;
+        document.getElementById("modulus").innerHTML= modulus;
+        document.getElementById("kenaikan++").innerHTML= increment;
+        document.getElementById("penurunan--").innerHTML= decrement;
+    </script>
+</body>
+</html>

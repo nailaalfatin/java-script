@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h2>Numbers</h2>
+    <p>Angka dapat ditulis dengan atau tanpa desimal:</p>
+    <p id="number"></p>
+
+    <h2>BigInt</h2>
+    <p>
+      Untuk membuat BigInt, tambahkan n di akhir bilangan bulat atau panggil BigInt()
+    </p>
+    <p id="big"></p>
+
+    <h2>Tipe Data Object Pada Javascript</h2>
+    <div id="object"></div>
+
+    <h2>Tipe Data Array Pada Javascript</h2>
+    <div id="array"></div>
+
+
+
+    <script>
+      // number
+      let x1 = 25.0;
+      let x2 = 25;
+      let x3 = 25.1;
+
+      //   menampilkan data number
+      document.getElementById("number").innerHTML =
+        x1 + "<br>" + x2 + "<br>" + x3;
+
+      // BigInt
+      let x = 123456789012345678901234567890n;
+      let y = BigInt("123456789012345678901234567890");
+      document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+      // tipe data object
+      var manusia = {
+        nama: "Ariana Granda",
+        alamat: "Jakarta",
+        umur: 40,
+        pekerjaan: "Programmer",
+      };
+
+      // menampilkan tipe data object pada element id hasil
+      document.getElementById("object").innerHTML =
+        manusia.nama +
+        " tinggal di " +
+        manusia.alamat +
+        " , dia sekarang berumur " +
+        manusia.umur +
+        " dan bekerja sebagai " +
+        manusia.pekerjaan;
+
+      // tipe data Array
+      var hewan = ["Kambing", "Bebek", "Ayam"];
+
+      // menampilkan tipe data Array pada element id hasil
+      document.getElementById("array").innerHTML = hewan[2];
+    </script>
+  </body>
+</html>
